@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Deeds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2f8b7d;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        header img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .deed-card {
+            position: relative;
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .deed-card:hover {
+            transform: scale(1.05);
+        }
+        .deed-card h3 {
+            margin-top: 0;
+        }
+        .deed-card p {
+            font-size: 14px;
+        }
+        .logo-hover {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .deed-card:hover .logo-hover {
+            opacity: 1;
+        }
+        .form-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+.back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color:  #218838; /* Slate light green */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #5a4dbc; /* Darker shade */
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="good deeds.jpg"" alt="Good Deeds Logo" width="80" height="50">
+<p><b>"The best deed is the one done regularly, even if it is small."</b></p>
+
+    <h1>Good Deeds</h1>
+    <p>Spread kindness and make the world a better place!</p>
+</header>
+<div class="content">
+    <h2>Examples of Good Deeds</h2>
+
+    <!-- Card for Good Deeds in English and Urdu with Benefits -->
+    <div class="deed-card">
+        <h3>Helping an Elderly Person (بزرگوں کی مدد کرنا)</h3>
+        <p><strong>English:</strong> Helping an elderly person with their groceries or tasks makes them feel cared for and improves their quality of life.</p>
+        <p><strong>Urdu:</strong> بزرگوں کی مدد کرنا ان کو پرواہ محسوس کراتا ہے اور ان کی زندگی کے معیار کو بہتر بناتا ہے۔</p>
+        <p><strong>Benefits:</strong> It strengthens community bonds and promotes a compassionate society.</p>
+        <img src="help.jpg"" alt="Logo" class="logo-hover" width="40" height="40">
+    </div>
+
+    <div class="deed-card">
+        <h3>Donating Clothes (کپڑے عطیہ کرنا)</h3>
+        <p><strong>English:</strong> Donating clothes helps those in need and reduces waste, promoting sustainability.</p>
+        <p><strong>Urdu:</strong> کپڑے عطیہ کرنے سے ضرورت مندوں کی مدد ہوتی ہے اور فضلہ کم ہوتا ہے، جو پائیداری کو فروغ دیتا ہے۔</p>
+        <p><strong>Benefits:</strong> It creates a positive impact on both people and the environment.</p>
+        <img src="clo.jpg"" alt="Logo" class="logo-hover" width="40" height="40">
+    </div>
+
+    <div class="deed-card">
+        <h3>Volunteering at a Shelter (پناہ گاہ میں رضاکارانہ خدمات دینا)</h3>
+        <p><strong>English:</strong> Volunteering at shelters offers support to those in distress, while giving you a sense of fulfillment.</p>
+        <p><strong>Urdu:</strong> پناہ گاہوں میں رضاکارانہ خدمات دینے سے پریشانی میں مبتلا افراد کی مدد ہوتی ہے اور آپ کو ایک مکمل کرنے کا احساس ہوتا ہے۔</p>
+        <p><strong>Benefits:</strong> Promotes kindness, compassion, and community spirit.</p>
+        <img src="volunteering.jpg"" alt="Logo" class="logo-hover" width="40" height="40">
+    </div>
+
+    <div class="deed-card">
+        <h3>Helping a Friend (دوست کی مدد کرنا)</h3>
+        <p><strong>English:</strong> Supporting a friend through difficult times can strengthen friendships and create a positive environment.</p>
+        <p><strong>Urdu:</strong> مشکل وقت میں دوست کی مدد کرنا دوستی کو مضبوط بناتا ہے اور ایک مثبت ماحول پیدا کرتا ہے۔</p>
+        <p><strong>Benefits:</strong> Encourages emotional well-being and mutual support.</p>
+        <img src="friends.jpg" alt="Logo" class="logo-hover" width="40" height="40">
+    </div>
+<div class="deed-card">
+    <h3>Sharing Food (کھانے کی تقسیم)</h3>
+    <p><strong>English:</strong> Sharing food with the less fortunate spreads happiness and reduces hunger.</p>
+    <p><strong>Urdu:</strong> کھانے کو کم خوش نصیبوں کے ساتھ بانٹنا خوشی پھیلاتا ہے اور بھوک کو کم کرتا ہے۔</p>
+    <p><strong>Benefits:</strong> Strengthens community ties and teaches generosity.</p>
+    <img src="food.jpg"" alt="Logo" class="logo-hover" width="40" height="40">
+</div>
+
+<div class="deed-card">
+    <h3>Volunteering Time (وقت رضاکارانہ طور پر دینا)</h3>
+    <p><strong>English:</strong> Offering your time for community service projects or charity work makes a big difference.</p>
+    <p><strong>Urdu:</strong> کمیونٹی سروس پروجیکٹس یا خیراتی کاموں کے لیے اپنا وقت دینا بڑا فرق پیدا کرتا ہے۔</p>
+    <p><strong>Benefits:</strong> Builds a sense of responsibility and makes you a part of positive change.</p>
+    <img src="volu time.jpg"" alt="Logo" class="logo-hover" width="40" height="40">
+</div>
+
+<div class="deed-card">
+    <h3>Spreading Knowledge (علم کو پھیلانا)</h3>
+    <p><strong>English:</strong> Sharing knowledge through teaching or mentoring empowers others and promotes learning.</p>
+    <p><strong>Urdu:</strong> تعلیم یا رہنمائی کے ذریعے علم پھیلانا دوسروں کو بااختیار بناتا ہے اور سیکھنے کو فروغ دیتا ہے۔</p>
+    <p><strong>Benefits:</strong> Creates a more informed and capable community.</p>
+    <img src="knowledge.jpg"" alt="Logo" class="logo-hover" width="40" height="40">
+</div>
+
+<div class="deed-card">
+    <h3>Helping Stray Animals (آوارہ جانوروں کی مدد کرنا)</h3>
+    <p><strong>English:</strong> Providing food and water to stray animals shows compassion for all living beings.</p>
+    <p><strong>Urdu:</strong> آوارہ جانوروں کو کھانا اور پانی فراہم کرنا تمام جانداروں کے لیے ہمدردی کا مظاہرہ کرتا ہے۔</p>
+    <p><strong>Benefits:</strong> Improves the welfare of animals and promotes kindness.</p>
+    <img src="astray animals.jpg"" alt="Logo" class="logo-hover" width="40" height="40">
+</div>
+
+    <h2>Share your favourite  Deed</h2>
+    <div class="form-container">
+        <label for="deed"> favourite Deed:</label>
+        <textarea id="deed" rows="4" placeholder="Describe your good deed..."></textarea>
+        <button onclick="submitDeed()">Submit</button>
+    </div>
+
+    <h2>Recent Good Deeds</h2>
+    <ul id="good-deeds-list" class="deed-list">
+        <!-- New deeds will appear here -->
+    </ul>
+</div>
+<a href="index.html" class="back-button">Back to Home</a>
+
+<script>
+    function submitDeed() {
+        const deedText = document.getElementById('deed').value;
+        if (deedText) {
+            const listItem = document.createElement('li');
+            listItem.textContent = deedText;
+            document.getElementById('good-deeds-list').appendChild(listItem);
+            document.getElementById('deed').value = ''; // Clear the textarea after submission
+        } else {
+            alert("Please describe a good deed before submitting.");
+        }
+    }
+</script>
+
+</body>
+</html>

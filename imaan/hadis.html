@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadees Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  #2f8b7d;
+            text-align: center;
+        }
+        .logo {
+            margin: 20px auto;
+            max-width: 150px;
+        }
+        .hadees-bold {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 10px;
+            color: #333;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px auto;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            padding: 20px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .hadees-urdu {
+            font-size: 1.2rem;
+            font-weight: bold;
+            direction: rtl;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .hadees-english {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .translation {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .book {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 10px;
+            font-style: italic;
+        }
+.back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color:  #218838; /* Slate light green */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #5a4dbc; /* Darker shade */
+        }
+
+    </style>
+</head>
+<body>
+
+    <img src="hadees.jpg"" alt="Hadees Logo" class="logo">
+    <div class="hadees-bold">حَدَّثَنَا وَقَالَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ</div>
+
+    <div class="cards-container">
+        <div class="card">
+            <div class="hadees-urdu">إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ</div>
+            <div class="hadees-english">Indeed, actions are judged by intentions.</div>
+            <div class="translation">This means every action is rewarded or judged according to the sincerity of intention behind it.</div>
+            <div class="book">- Sahih al-Bukhari</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">مَنْ غَشَّنَا فَلَيْسَ مِنَّا</div>
+            <div class="hadees-english">Whoever cheats us is not one of us.</div>
+            <div class="translation">This highlights the prohibition of deceit and the importance of honesty in Islam.</div>
+            <div class="book">- Sahih Muslim</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">الْمُسْلِمُ أَخُو الْمُسْلِمِ</div>
+            <div class="hadees-english">A Muslim is a brother of another Muslim.</div>
+            <div class="translation">This underscores the value of unity and mutual support among Muslims.</div>
+            <div class="book">- Sunan Abu Dawood</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">الدُّنْيَا سِجْنُ الْمُؤْمِنِ وَجَنَّةُ الْكَافِرِ</div>
+            <div class="hadees-english">The world is a prison for the believer and a paradise for the disbeliever.</div>
+            <div class="translation">This explains the challenges faced by believers in this world compared to the Hereafter.</div>
+            <div class="book">- Sahih Muslim</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">الْمَرْءُ مَعَ مَنْ أَحَبَّ</div>
+            <div class="hadees-english">A person will be with those whom he loves.</div>
+            <div class="translation">This emphasizes the importance of loving righteous company to achieve good in the Hereafter.</div>
+            <div class="book">- Sahih al-Bukhari</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</div>
+            <div class="hadees-english">Seeking knowledge is an obligation upon every Muslim.</div>
+            <div class="translation">This highlights the significance of acquiring knowledge as a fundamental duty in Islam.</div>
+            <div class="book">- Sunan Ibn Majah</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">مَنْ صَمَتَ نَجَا</div>
+            <div class="hadees-english">Whoever remains silent has been saved.</div>
+            <div class="translation">This advises maintaining silence to avoid unnecessary speech that could lead to sin.</div>
+            <div class="book">- Sunan al-Tirmidhi</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">لَا يَرْحَمُ اللَّهُ مَنْ لَا يَرْحَمُ النَّاسَ</div>
+            <div class="hadees-english">Allah does not show mercy to those who do not show mercy to people.</div>
+            <div class="translation">This emphasizes the importance of compassion and mercy towards others.</div>
+            <div class="book">- Sahih al-Bukhari</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ</div>
+            <div class="hadees-english">Whoever guides someone to goodness will have a reward similar to the one who does it.</div>
+            <div class="translation">This encourages guiding others towards righteous deeds to share in their reward.</div>
+            <div class="book">- Sahih Muslim</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">لَا يَحِلُّ لِمُسْلِمٍ أَنْ يَهْجُرَ أَخَاهُ فَوْقَ ثَلَاثِ لَيَالٍ</div>
+            <div class="hadees-english">It is not lawful for a Muslim to forsake his brother beyond three nights.</div>
+            <div class="translation">This stresses the importance of reconciliation and maintaining relationships among Muslims.</div>
+            <div class="book">- Sahih al-Bukhari</div>
+        </div>
+
+        <div class="card">
+            <div class="hadees-urdu">الرَّاحِمُونَ يَرْحَمُهُمُ الرَّحْمَنُ</div>
+            <div class="hadees-english">The Merciful will show mercy to those who have mercy on others.</div>
+            <div class="translation">This highlights the divine reward for showing mercy and kindness to others.</div>
+            <div class="book">- Sunan al-Tirmidhi</div>
+        </div>
+    </div>
+<a href="index.html" class="back-button">Back to Home</a>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f3f4f6, #d1e7f2);
+            color: #333;
+            background-image: url('https://source.unsplash.com/1600x900/?mosque');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            opacity: 0.95;
+        }
+        header {
+            background: #2f8b7d;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .hero-image {
+            width: 100%;
+            height: 350px;
+            background: url('https://source.unsplash.com/1600x900/?quran') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        .hero-image h2 {
+            color: #fff;
+            font-size: 2.8em;
+            font-weight: 600;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 25px;
+            text-align: center;
+        }
+        .card-content h2 {
+            margin: 15px 0;
+            font-size: 2em;
+            color: #2f8b7d;
+        }
+        .card-content p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 25px;
+        }
+        .card-content a {
+            display: inline-block;
+            padding: 12px 25px;
+            color: #fff;
+            background: #2f8b7d;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .card-content a:hover {
+            background: #23877d;
+            transform: translateY(-3px);
+        }
+        footer {
+            background: #2f8b7d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        footer p {
+            font-size: 1.1em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AL-Hidayah</h1>
+</header>
+
+
+<div class="container">
+    <div class="card">
+        <img src="quran img.jpg"" alt="Quran Logo">
+        <div class="card-content">
+            <h2>30 Chapters</h2>
+            <p><b>"The best of you are those who learn the Quran and teach it."</b></p>
+            <a href="30 chap.html">Let's Get Started</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="duas.jpg"" alt="Duas Logo">
+        <div class="card-content">
+            <h2>Duas</h2>
+            <p><b>"Supplication is the essence of worship."</b></p>
+            <a href="duas page.html">Let's Get Started</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="tasbeeh.jpg"" alt="Tasbeeh Logo">
+        <div class="card-content">
+            <h2>Tasbeeh</h2>
+            <p><b>"The remembrance of Allah brings peace to the heart.</b>"</p>
+            <a href="tasbeeh count.html">Let's Get Started</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="good deeds.jpg"" alt="Good Deeds Logo">
+        <div class="card-content">
+            <h2>Good Deeds</h2>
+            <p><b>"The best deed is the one done regularly, even if it is small."</b></p>
+            <a href="good deed.html">Let's Get Started</a>
+        </div>
+        </div>
+
+    <div class="card">
+        <img src="allah.png"" alt= Allah 99 names Logo">
+        <div class="card-content">
+            <h2>99 Names</h2>
+            <p><b>"Indeed, Allah has ninety-nine names. He who remembers them will enter Paradise." (Sahih Muslim)"."</b></p>
+            <a href="Allah's name.html">Let's Get Started</a>
+     </div>
+     </div>
+
+        <div class="card">
+        <img src="hadees.jpg""" alt="Hadees Logo">
+        <div class="card-content">
+            <h2>Hadees</h2>
+            <p><b>"Convey from me, even if it is one verse.."</b></p>
+        <a href="hadis.html">Let's Get Started</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasbeeh Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color:#2f8b7d;
+            text-align: center;
+        }
+        .logo {
+            margin-top: 20px;
+        }
+        .logo img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .hadees {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #333;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .hadees span {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .tasbeeh-counter {
+            margin: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .counter {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button:active {
+            transform: scale(0.98);
+        }
+        .dropdown {
+            margin-top: 20px;
+        }
+        .dropdown select {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .benefit {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #444;
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .back-home {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .back-home:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="tasbeeh.jpg"" alt="Logo">
+<p><b>"The remembrance of Allah brings peace to the heart.</b>"</p>
+
+    </div>
+    <div class="hadees">
+        <p>
+            <span>Prophet Muhammad (ﷺ) said:</span> 
+            "The uttering of <em>SubhanAllah</em>, <em>Alhamdulillah</em>, <em>La ilaha illallah</em>, and <em>Allahu Akbar</em> is dearer to me than anything over which the sun rises."
+        </p>
+    </div>
+    <div class="tasbeeh-counter">
+        <div class="counter">Count: <span id="count">0</span></div>
+        <div class="buttons">
+            <button onclick="incrementCounter()">+1</button>
+            <button onclick="resetCounter()">Reset</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <label for="tasbeeh">Choose a Tasbeeh: </label>
+        <select id="tasbeeh" onchange="showBenefit()">
+            <option value="">--Select--</option>
+            <option value="astaghfar">Astaghfirullah</option>
+            <option value="la_ilaha">La ilaha illallah Muhammadur Rasool Allah</option>
+            <option value="subhanallah">SubhanAllah</option>
+            <option value="alhamdulillah">Alhamdulillah</option>
+            <option value="allahu_akbar">Allahu Akbar</option>
+            <option value="la_hawla">La hawla wa la quwwata illa billah</option>
+            <option value="subbooh_quddus">Subboohun Quddoosun Rabbul-mala'ikati wa ruh</option>
+            <option value="hasbiyallahu">Hasbiyallahu la ilaha illa Hu</option>
+        </select>
+    </div>
+    <div class="benefit" id="benefit">
+        Select a Tasbeeh to see its benefits.
+    </div>
+    <a href="index.html" class="back-home">Back to Home</a>
+    <script>
+        let count = 0;
+
+        function incrementCounter() {
+            count++;
+            document.getElementById('count').innerText = count;
+        }
+
+        function resetCounter() {
+            count = 0;
+            document.getElementById('count').innerText = count;
+        }
+
+        function showBenefit() {
+            const benefits = {
+                astaghfar: "Seeking forgiveness from Allah brings peace, removes sins, and attracts blessings in life.",
+                la_ilaha: "This declaration of faith is the foundation of Islam and a key to Paradise.",
+                subhanallah: "Glorifying Allah brings immense rewards and strengthens faith.",
+                alhamdulillah: "Expressing gratitude to Allah increases blessings and brings satisfaction.",
+                allahu_akbar: "Acknowledging the greatness of Allah reinforces submission and humility.",
+                la_hawla: "A reminder of reliance on Allah during times of hardship and trials.",
+                subbooh_quddus: "Glorifying Allah’s purity and holiness strengthens the connection with Him.",
+                hasbiyallahu: "A declaration of trust and sufficiency in Allah, bringing calm and reliance on Him."
+            };
+
+            const selected = document.getElementById('tasbeeh').value;
+            const benefitText = benefits[selected] || "Select a Tasbeeh to see its benefits.";
+            document.getElementById('benefit').innerText = benefitText;
+        }
+    </script>
+</body>
+</html>

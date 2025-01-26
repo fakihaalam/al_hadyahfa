@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99 Names of Allah</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+        }
+.back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color:  #218838; /* Slate light green */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #5a4dbc; /* Darker shade */
+        }
+
+
+        /* Header Section */
+        header {
+            background-color: #3a9e7e;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        .hadith {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Names Container */
+        .names-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+            padding: 0 10px;
+        }
+
+        /* Individual Cards */
+        .card {
+            background-color: #ffffff;
+            border: 2px solid #3a9e7e;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+            color: #3a9e7e;
+        }
+
+        .benefit {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+        /* Responsive Grid for Smaller Screens */
+        @media (max-width: 768px) {
+            .names-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .names-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section with Logo and Hadith -->
+    <header>
+        <img src="allah.png"" alt="Logo of Allah's Names" class="logo">
+        <p class="hadith"><b>“The most beautiful names belong to Allah: so call on Him by them.” - Surah Al-A’raf 7:180</b></p>
+    </header>
+
+    <!-- Container for the Names and Benefits -->
+    <div class="names-container" id="namesContainer"></div>
+<a href="index.html" class="back-button">Back to Home</a>
+
+
+
+    <script>
+        // Data for the 99 names of Allah and their benefits
+        const namesAndBenefits = [
+            { name: "Ar-Rahman", benefit: "Reciting this name brings immense mercy and blessings from Allah." },
+            { name: "Al-Malik", benefit: "Reciting this name brings strength and dominion in the affairs of life." },
+            { name: "Al-Quddus", benefit: "It brings purity and helps cleanse your soul from impurities." },
+            { name: "As-Salam", benefit: "Reciting this name brings peace and tranquility into your heart." },
+            { name: "Al-Mu’min", benefit: "This name helps in increasing faith and belief in Allah." },
+            { name: "Al-Muhaymin", benefit: "It provides protection and safety from harm." },
+            { name: "Al-Aziz", benefit: "Reciting this name brings power and success in endeavors." },
+            { name: "Al-Jabbar", benefit: "It helps heal broken hearts and provides strength." },
+            { name: "Al-Mutakabbir", benefit: "Reciting this name helps in increasing humility." },
+            { name: "Al-Khaliq", benefit: "It brings creative energy and helps in starting new ventures." },
+            { name: "Al-Bari", benefit: "Helps bring about new beginnings and successful outcomes." },
+            { name: "Al-Musawwir", benefit: "It provides guidance and a sense of purpose in life." },
+            { name: "Al-Ghaffar", benefit: "Reciting this name brings forgiveness and mercy from Allah." },
+            { name: "Al-Qahhar", benefit: "This name grants victory over difficulties and oppression." },
+            { name: "Al-Wahhab", benefit: "Reciting this name opens doors of abundant blessings and gifts." },
+            { name: "Ar-Razzaq", benefit: "It brings sustenance and increases your provision." },
+            { name: "Al-Fattah", benefit: "This name helps in unlocking opportunities and solutions." },
+            { name: "Al-`Alim", benefit: "Reciting this name increases knowledge and understanding." },
+            { name: "Al-Qabid", benefit: "It provides control and direction during uncertain times." },
+            { name: "Al-Basit", benefit: "It expands the blessings and opportunities in your life." },
+            { name: "Al-Khafid", benefit: "Reciting this name brings humility and prevents arrogance." },
+            { name: "Ar-Rafi`", benefit: "It helps elevate one’s status and character." },
+            { name: "Al-Mu'izz", benefit: "Reciting this name brings honor and respect." },
+            { name: "Al-Mudhill", benefit: "It humbles those who are arrogant and prideful." },
+            { name: "As-Sami'", benefit: "It helps in increasing spiritual listening and awareness." },
+            { name: "Al-Basir", benefit: "Reciting this name helps in increasing clarity and vision in life." },
+            { name: "Al-Hakam", benefit: "This name helps in resolving conflicts and disputes." },
+            { name: "Al-`Adl", benefit: "It brings fairness, justice, and resolution in all matters." },
+            { name: "Al-Latif", benefit: "Reciting this name brings ease and comfort to one's life." },
+            { name: "Al-Khabir", benefit: "It helps in gaining insight and awareness about the unseen." },
+            { name: "Al-Halim", benefit: "Reciting this name brings patience and calmness in difficult situations." },
+            { name: "Al-Azim", benefit: "It grants strength and awe-inspiring power." },
+            { name: "Al-Ghafur", benefit: "This name brings forgiveness for sins and wrongdoings." },
+            { name: "Ash-Shakur", benefit: "Reciting this name brings gratitude and thankfulness." },
+            { name: "Al-`Aliyy", benefit: "It elevates one's position and boosts self-confidence." },
+            { name: "Al-Kabir", benefit: "It helps to maintain a sense of awe and humility." },
+            { name: "Al-Hafiz", benefit: "This name provides protection and safeguarding from harm." },
+            { name: "Al-Muqit", benefit: "Reciting this name brings nourishment and sustenance." },
+            { name: "Al-Hasib", benefit: "It helps in accountability and ensuring your actions are aligned with righteousness." },
+            { name: "Al-Jalil", benefit: "Reciting this name brings majesty and honor." },
+            { name: "Al-Karim", benefit: "It grants generosity and abundance in life." },
+            { name: "Ar-Raqib", benefit: "Reciting this name provides vigilance and protection from unseen dangers." },
+            { name: "Al-Mujib", benefit: "It brings rapid responses to prayers and supplications." },
+            { name: "Al-Wasi`", benefit: "This name provides expansiveness in all aspects of life." },
+            { name: "Al-Hakim", benefit: "It helps in gaining wisdom and understanding of divine knowledge." },
+            { name: "Al-Wadud", benefit: "Reciting this name brings love and affection into one’s life." },
+            { name: "Al-Majid", benefit: "It brings glory and high status." },
+            { name: "Al-Ba'ith", benefit: "This name helps in resurrecting hope and new life." },
+            { name: "Ash-Shahid", benefit: "It helps in spiritual witnessing and truthfulness." },
+            { name: "Al-Haqq", benefit: "This name brings clarity and guidance towards truth." },
+            { name: "Al-Wakil", benefit: "Reciting this name helps in placing trust in Allah and gaining peace." },
+            { name: "Al-Qawiyy", benefit: "It brings strength and resilience in the face of adversity." },
+            { name: "Al-Matin", benefit: "This name provides steadfastness and persistence in endeavors." },
+            { name: "Al-Waliyy", benefit: "It brings closeness and friendship with Allah." },
+            { name: "Al-Hamid", benefit: "Reciting this name brings praise and gratitude towards Allah." },
+            { name: "Al-Muhsi", benefit: "It helps in maintaining mindfulness and awareness of one’s actions." },
+            { name: "Al-Mubdi", benefit: "Reciting this name brings renewal and transformation in life." }
+        ];
+
+        // Function to generate and display the names and benefits dynamically
+        function displayNames() {
+            const container = document.getElementById('namesContainer');
+            namesAndBenefits.forEach(nameData => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+
+                const nameElement = document.createElement('div');
+                nameElement.classList.add('name');
+                nameElement.textContent = nameData.name;
+
+                const benefitElement = document.createElement('div');
+                benefitElement.classList.add('benefit');
+                benefitElement.textContent = nameData.benefit;
+
+                card.appendChild(nameElement);
+                card.appendChild(benefitElement);
+                container.appendChild(card);
+            });
+        }
+
+        // Call the function to display the names and benefits
+        displayNames();
+    </script>
+
+</body>
+</html>

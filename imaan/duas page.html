@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duas Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2f8b7d; /* Light purple background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            height: 80px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dua-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        .card .hadees {
+            font-size: 0.9em;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .card .translation {
+            color: #333;
+            margin-top: 5px;
+            font-size: 1em;
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color:  #218838; /* Slate light green */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #5a4dbc; /* Darker shade */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="duas.jpg"" alt="Logo" class="logo">
+   <p><b>"Supplication is the essence of worship."</b></p>
+
+</div>
+
+<div class="dua-container">
+    <div class="card">
+        <h2>Before Eating</h2>
+        <p>بِسْمِ اللَّهِ وَبِسْمِ اللَّهِ، اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ</p>
+        <p class="translation">In the name of Allah and with Allah. O Allah, bless us in what You have provided us and protect us from the punishment of the Fire.</p>
+        <p class="hadees">Prophet Muhammad (PBUH) said to recite this before eating for blessings. (Sunan Abu Dawood)</p>
+    </div>
+    <div class="card">
+        <h2>After Eating</h2>
+        <p>الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ</p>
+        <p class="translation">Praise be to Allah who fed us and provided us drink and made us Muslims.</p>
+        <p class="hadees">This dua is for gratitude to Allah after eating. (Sunan Ibn Majah)</p>
+    </div>
+    <div class="card">
+        <h2>Before Sleeping</h2>
+        <p>بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي وَبِكَ أَرْفَعُهُ</p>
+        <p class="translation">In Your name, my Lord, I lay down and in Your name I rise.</p>
+        <p class="hadees">Recite this before sleeping for protection. (Sahih Bukhari)</p>
+    </div>
+    <div class="card">
+        <h2>After Waking Up</h2>
+        <p>الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ</p>
+        <p class="translation">Praise be to Allah who gave us life after death and to Him is the return.</p>
+        <p class="hadees">Thank Allah for giving life after sleep. (Sahih Bukhari)</p>
+    </div>
+    <div class="card">
+        <h2>Entering the Home</h2>
+        <p>اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ الْمَوْلَجِ وَخَيْرَ الْمَخْرَجِ</p>
+        <p class="translation">O Allah, I ask You for the best entrance and the best exit.</p>
+        <p class="hadees">Seek blessings upon entering your home. (Muslim)</p>
+    </div>
+    <div class="card">
+        <h2>Leaving the Home</h2>
+        <p>بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ</p>
+        <p class="translation">In the name of Allah, I place my trust in Allah, and there is no power nor might except with Allah.</p>
+        <p class="hadees">Recite this while leaving home for Allah's protection. (Sunan Abu Dawood)</p>
+    </div>
+    <!-- Additional Duas -->
+    <div class="card">
+        <h2>In Times of Difficulty</h2>
+        <p>حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ</p>
+        <p class="translation">Sufficient for us is Allah, and He is the best disposer of affairs.</p>
+        <p class="hadees">This is a dua for reliance on Allah in hardship. (Sahih Bukhari)</p>
+    </div>
+    <div class="card">
+        <h2>Morning Dua</h2>
+        <p>اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا</p>
+        <p class="translation">O Allah, by You we reach the morning and by You we reach the evening.</p>
+        <p class="hadees">A dua for the morning. (Sunan Abu Dawood)</p>
+    </div>
+    <div class="card">
+        <h2>Evening Dua</h2>
+        <p>اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ</p>
+        <p class="translation">O Allah, You are my Lord; there is no deity except You.</p>
+        <p class="hadees">A dua for the evening. (Tirmidhi)</p>
+    </div>
+    <div class="card">
+        <h2>Dua for Forgiveness</h2>
+        <p>رَبِّ اغْفِرْ لِي وَارْحَمْنِي</p>
+        <p class="translation">My Lord, forgive me and have mercy upon me.</p>
+        <p class="hadees">A dua for seeking forgiveness. (Sahih Muslim)</p>
+    </div>
+    <div class="card">
+        <h2>Dua for Guidance</h2>
+        <p>اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي</p>
+        <p class="translation">O Allah , guide me and make me steadfast.</p>
+        <p class="hadees">A dua for seeking guidance. (Sahih Muslim)</p>
+    </div>
+</div>
+
+<a href="index.html" class="back-button">Back to Home</a>
+
+</body>
+</html>
+
